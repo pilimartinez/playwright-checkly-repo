@@ -8,9 +8,7 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.38.0",
-    "@types/node": "^20.6.3",
-    "checkly": "^0.0.0-pr.1181.09d6700",
-    "jiti": "^2.6.1"
+    "@types/node": "^20.6.3"
   },
   "scripts": {},
   "keywords": [],
