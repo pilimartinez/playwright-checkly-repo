@@ -1,13 +1,17 @@
 import { defineConfig } from 'checkly'
 
 const config = defineConfig({
-  projectName: 'Playwright Checkly Repo',
+  projectName: 'Playwright Checkly Repo 1',
   logicalId: 'playwright-checkly-repo',
   repoUrl: 'https://github.com/pilimartinez/playwright-checkly-repo',
   checks: {
     playwrightConfigPath: './playwright.config.js',
     playwrightChecks: [
-      { name: 'Playwright Tests', logicalId: 'playwright-tests' }
+      { name: 'Checkly Tests', logicalId: 'checkly-tests' }
+    ],
+    environmentVariables: [
+      { key: "TEST_USERNAME", value: "testuser@example.com" },
+      { key: "TEST_USERNAMI", value: "testuser@example.com" },
     ],
   },
 })
